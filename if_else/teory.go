@@ -48,7 +48,7 @@ func main() {
 	fmt.Scan(&age)
 	if age < 18 {
 		fmt.Println("несовершеннолетний")
-	} else if 18 <= age && age <= 64 {
+	} else if age <= 64 {
 		fmt.Println("совершеннолетний")
 	} else {
 		println("пенсионер")
@@ -93,8 +93,6 @@ func main() {
 
 	   		fmt.Println("Оценка: F")
 	   	}
-	*/
-
 	var age int
 	for i := 0; i < 5; i++ {
 		fmt.Print("Введите возраст: ")
@@ -109,13 +107,19 @@ func main() {
 		} else if age >= 66 {
 			fmt.Println("Пенсионер")
 		}
-		/*switch {
+		switch {
 		case age < 18:
 			fmt.Println("Ребенок")
 		case age <= 65:
 			fmt.Println("Взрослый")
 		case age >= 66:
 			fmt.Println("Пенсионер")
-		}*/
+		}
+	}*/
+	var n, sum int
+	fmt.Scan(&n)
+	for i := 1; i < n; i++ {
+		sum += i
 	}
+	fmt.Println(sum)
 }
